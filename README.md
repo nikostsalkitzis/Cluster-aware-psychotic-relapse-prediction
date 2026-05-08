@@ -60,16 +60,16 @@ The provided `data/` directory follows this structure:
 data/
 ├── track_2/
 │   └── P1/ ... P8/
-│       └── <episode>_test/
+│       └── {train,val,test}_<episode>/
 │           └── relapses.csv
 └── track_2_new_features/
     └── P1/ ... P8/
-        └── <episode>_train/
+        └── train_<episode>/
         │   └── features_stretched_w_steps.csv
-        ├── <episode>_val/
+        ├── val_<episode>/
         │   ├── features_stretched_w_steps.csv
         │   └── relapse_stretched.csv
-        └── <episode>_test/
+        └── test_<episode>/
             ├── features_stretched_w_steps.csv
             └── relapse_stretched.csv
 ```
@@ -83,8 +83,8 @@ Each `features_stretched_w_steps.csv` contains 5-minute epoch summaries of 8 phy
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone git@github.com:nikostsalkitzis/Beyond-Personalization-Cluster-Aware-Shared-Learning-for-Wearable-Based-Psychotic-Relapse-Detection.git
+cd Beyond-Personalization-Cluster-Aware-Shared-Learning-for-Wearable-Based-Psychotic-Relapse-Detection
 ```
 
 **2. Create a virtual environment (recommended)**
@@ -186,7 +186,8 @@ python test.py \
     --load_path     checkpoints_clustered/ \
     --mode          test \
     --agg_mode      A \
-    --lookbacks     4 4 4 4 4 4 4 4
+    --thresholds -0.1 -0.1 -0.1 -0.1 0 0 0 -0.1 \
+    --lookbacks 2 12 12 2 12 3 12 12 \
 ```
 
 #### Temporal Aggregation Modes
@@ -231,8 +232,9 @@ for i in $(seq 1 15); do
         --features_path data/track_2_new_features/ \
         --dataset_path  data/track_2/ \
         --mode          test \
-        --agg_mode      A \
-        --lookbacks     4 4 4 4 4 4 4 4
+        --thresholds -0.1 -0.1 -0.1 -0.1 0 0 0 -0.1 \
+        --lookbacks 2 12 12 2 12 3 12 12 \
+
 done
 ```
 
