@@ -29,10 +29,9 @@ class PositionalEncoding(nn.Module):
         return self.dropout(x)
 
 
-# -------------------------------------------------------
-# Ensemble Linear Layer
-# (unchanged — used by trainer for ensemble modeling)
-# -------------------------------------------------------
+# -------------------------------------------------------------
+# Ensemble Linear Layer — used by trainer for ensemble modeling
+# -------------------------------------------------------------
 class EnsembleLinear(nn.Module):
     __constants__ = ["in_features", "out_features"]
     in_features: int
