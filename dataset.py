@@ -9,7 +9,7 @@ import numpy as np
 
 
 # -------------------------------------------------------
-# Original PatientDataset (used for val / test — unchanged)
+# PatientDataset
 # -------------------------------------------------------
 class PatientDataset(Dataset):
     def __init__(
