@@ -6,7 +6,7 @@
 
 Official implementation of the paper:
 
-> **Beyond Personalization: Cluster-Aware Shared Learning for Wearable-Based Psychotic Relapse Detection**
+> **Beyond Personalization: Cluster-Aware Shared Representation Learning for Wearable-Based Psychotic Relapse Detection**
 > N. Tsalkitzis, P. Maragos, N. Efthymiou
 > *IEEE-EMBS International Conference on Body Sensor Networks (BSN 2026)*
 
