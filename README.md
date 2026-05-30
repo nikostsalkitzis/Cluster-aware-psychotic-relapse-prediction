@@ -4,13 +4,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Official implementation of the paper:
-
-> **Beyond Personalization: Cluster-Aware Shared Representation Learning for Wearable-Based Psychotic Relapse Detection**
-> N. Tsalkitzis, P. Maragos, N. Efthymiou
-> *IEEE-EMBS International Conference on Body Sensor Networks (BSN 2026)*
-
----
 
 ## Overview
 
