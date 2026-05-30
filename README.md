@@ -263,13 +263,13 @@ Overall performance on the e-Prevention cohort (mean ± std, 15 runs):
 If you use this code or the pre-extracted features in your research, please cite:
 
 ```bibtex
-@inproceedings{tsalkitzis2026beyond,
-  title     = {Beyond Personalization: Cluster-Aware Shared Learning for
-               Wearable-Based Psychotic Relapse Detection},
-  author    = {Tsalkitzis, N. and Maragos, P. and Efthymiou, N.},
-  booktitle = {Proceedings of the IEEE-EMBS International Conference on
-               Body Sensor Networks (BSN)},
-  year      = {2026}
+@misc{tsalkitzis2026beyond,
+  title  = {Beyond Personalization: Cluster-Aware Shared Representation
+            Learning for Wearable-Based Psychotic Relapse Detection},
+  author = {Tsalkitzis, Nikolaos and Maragos, Petros and Efthymiou, Niki},
+  year   = {2026},
+  note   = {Under review at IEEE-EMBS International Conference on Body
+            Sensor Networks (BSN)}
 }
 ```
 
