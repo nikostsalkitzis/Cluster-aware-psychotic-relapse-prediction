@@ -76,7 +76,7 @@ Each `features_stretched_w_steps.csv` contains 5-minute epoch summaries of 8 phy
 **1. Clone the repository**
 
 ```bash
-git clone git@github.com:nikostsalkitzis/Cluster-aware-psychotic-relapse-prediction.git
+git clone nikostsalkitzis/Cluster-aware-psychotic-relapse-prediction.git
 cd Cluster-aware-psychotic-relapse-prediction
 ```
 
